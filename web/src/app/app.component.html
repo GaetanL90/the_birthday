@@ -1,0 +1,11 @@
+<div class="sky" aria-hidden="true">
+  @for (b of balloons; track b) {
+    <span class="balloon" [style.--i]="b"></span>
+  }
+</div>
+<app-confetti />
+<main>
+  <router-outlet />
+</main>
+<app-install-banner />
+<app-music-player />

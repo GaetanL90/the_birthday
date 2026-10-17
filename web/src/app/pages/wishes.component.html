@@ -1,0 +1,35 @@
+@if (wish(); as w) {
+  <article class="wish" [attr.data-palette]="w.palette">
+    <a class="back" routerLink="/">← Choose again</a>
+
+    <header class="hero">
+      <div class="hero-photo" [style.backgroundImage]="'url(' + w.hero + ')'"></div>
+      <div class="hero-copy">
+        <p class="kicker">{{ w.kicker }}</p>
+        <h1>{{ w.headline }}</h1>
+        <p class="greeting">{{ w.greeting }}</p>
+      </div>
+    </header>
+
+    <section class="letter">
+      <p class="seal">A letter from home</p>
+      @for (paragraph of w.letter; track paragraph) {
+        <p>{{ paragraph }}</p>
+      }
+      <p class="closing">{{ w.closing }}</p>
+    </section>
+
+    <h2 class="chapter">Photographs, with love in the captions</h2>
+    <app-gallery [photos]="w.photos" [videos]="w.videos || []" />
+
+    <footer class="finale">
+      <p>May this year be louder with laughter and gentler with time.</p>
+      <h3>Happy Birthday, {{ w.name }}.</h3>
+      <nav>
+        <a routerLink="/wishes/gatoya">Gatoya</a>
+        <a routerLink="/wishes/both">Both</a>
+        <a routerLink="/wishes/gakuru">Gakuru</a>
+      </nav>
+    </footer>
+  </article>
+}

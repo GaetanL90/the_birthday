@@ -1,0 +1,7 @@
+.vercel
+web/dist
+web/node_modules
+web/.angular
+*.log
+.DS_Store
+Thumbs.db

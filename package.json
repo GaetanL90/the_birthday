@@ -1,0 +1,11 @@
+{
+  "name": "the-birthday",
+  "private": true,
+  "scripts": {
+    "start": "npm start --prefix web",
+    "build": "npm run build --prefix web"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}

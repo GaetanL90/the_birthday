@@ -1,0 +1,42 @@
+.sky {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.balloon {
+  --hue: calc(320 + var(--i) * 18);
+  position: absolute;
+  bottom: -80px;
+  left: calc(6% + var(--i) * 9%);
+  width: 28px;
+  height: 36px;
+  border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+  background: hsl(var(--hue) 80% 68%);
+  opacity: 0.35;
+  animation: lift calc(14s + var(--i) * 1.4s) ease-in infinite;
+  animation-delay: calc(var(--i) * -1.6s);
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 1px;
+  height: 46px;
+  background: rgba(255, 246, 236, 0.35);
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes lift {
+  0% { transform: translateY(0) rotate(-6deg); }
+  50% { transform: translateY(-60vh) rotate(8deg); }
+  100% { transform: translateY(-110vh) rotate(-4deg); }
+}

@@ -1,0 +1,143 @@
+.wish {
+  position: relative;
+  z-index: 2;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 120px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.hero {
+  position: relative;
+  min-height: 72svh;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 36px;
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 20%;
+  transform: scale(1.04);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18, 7, 14, 0.1), rgba(18, 7, 14, 0.78) 70%);
+}
+
+.hero-copy {
+  position: absolute;
+  inset: auto 32px 36px;
+  z-index: 1;
+  max-width: 760px;
+  text-shadow: 0 12px 40px rgba(8, 2, 6, 0.7);
+}
+
+.kicker {
+  color: var(--gold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(46px, 8vw, 86px);
+  line-height: 0.92;
+  margin: 8px 0 10px;
+}
+
+.greeting {
+  font-family: var(--font-script);
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 0;
+  color: var(--blush);
+}
+
+.letter {
+  background: rgba(255, 246, 236, 0.06);
+  border: 1px solid rgba(255, 246, 236, 0.12);
+  border-radius: 28px;
+  padding: 36px clamp(20px, 4vw, 56px);
+  margin-bottom: 48px;
+  box-shadow: inset 0 0 80px rgba(246, 211, 107, 0.05);
+}
+
+.seal {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.letter p {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.45;
+  color: var(--cream);
+}
+
+.closing {
+  font-family: var(--font-script) !important;
+  font-size: 40px !important;
+  color: var(--rose) !important;
+}
+
+.chapter {
+  font-family: var(--font-display);
+  font-size: 36px;
+  margin: 8px 0 8px;
+}
+
+.finale {
+  text-align: center;
+  padding: 24px 0 40px;
+}
+
+.finale h3 {
+  font-family: var(--font-script);
+  font-size: 56px;
+  margin: 8px 0 24px;
+  font-weight: 400;
+}
+
+.finale nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.finale a {
+  border: 1px solid rgba(255, 246, 236, 0.2);
+  padding: 10px 18px;
+  border-radius: 999px;
+}
+
+.wish[data-palette='rose'] .greeting,
+.wish[data-palette='rose'] .closing {
+  color: #ffb6cd;
+}
+
+.wish[data-palette='gold'] .greeting,
+.wish[data-palette='gold'] .closing {
+  color: var(--gold);
+}
+
+.wish[data-palette='twin'] .hero::after {
+  background: linear-gradient(90deg, rgba(232, 90, 140, 0.28), rgba(18, 7, 14, 0.7), rgba(212, 160, 23, 0.28));
+}

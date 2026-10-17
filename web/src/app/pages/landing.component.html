@@ -1,0 +1,36 @@
+<section class="stage">
+  @if (!opened()) {
+    <button class="gift" type="button" (click)="openGift()">
+      <span class="ribbon"></span>
+      <span class="bow"></span>
+      <div class="gift-copy">
+        <p class="eyebrow">A present from home</p>
+        <h1>Tap to open<br />the birthday gift</h1>
+        <p class="hint">Music, photographs, and two letters waiting inside.</p>
+      </div>
+    </button>
+  } @else {
+    <header class="intro">
+      <p class="eyebrow">Gatoya & Gakuru</p>
+      <h1>Whose wishes shall we open?</h1>
+      <p class="lede">
+        One birthday. Two stars. Choose her glow, his gold, or the whole constellation.
+      </p>
+    </header>
+
+    <div class="doors">
+      @for (card of cards; track card.key) {
+        <a class="door" [routerLink]="['/wishes', card.key]" [class.center]="card.key === 'both'">
+          <div class="photo" [style.backgroundImage]="'url(' + card.image + ')'"></div>
+          <div class="veil"></div>
+          <div class="meta">
+            <span>{{ card.subtitle }}</span>
+            <h2>{{ card.title }}</h2>
+            <p>{{ card.line }}</p>
+            <em>Open wishes →</em>
+          </div>
+        </a>
+      }
+    </div>
+  }
+</section>
