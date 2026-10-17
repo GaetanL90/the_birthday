@@ -4,7 +4,7 @@
   min-height: 100svh;
   display: grid;
   place-items: center;
-  padding: 28px 20px 120px;
+  padding: 56px 20px 120px;
 }
 
 .eyebrow {
@@ -15,6 +15,7 @@
   margin: 0 0 12px;
 }
 
+.countdown-card,
 .gift {
   position: relative;
   width: min(520px, 92vw);
@@ -30,6 +31,44 @@
   animation: floaty 4.5s ease-in-out infinite;
 }
 
+.countdown-card {
+  width: min(640px, 92vw);
+  min-height: 0;
+  padding: 40px 28px 36px;
+  overflow: visible;
+  animation: none;
+}
+
+.clock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.clock div {
+  padding: 14px 6px;
+  border-radius: 16px;
+  background: rgba(18, 7, 14, 0.45);
+  border: 1px solid rgba(255, 246, 236, 0.12);
+}
+
+.clock strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 6vw, 44px);
+  line-height: 1;
+}
+
+.clock span {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
 .gift-copy {
   position: relative;
   z-index: 2;
@@ -37,6 +76,7 @@
   text-align: center;
 }
 
+.countdown-card h1,
 .gift h1,
 .intro h1 {
   font-family: var(--font-display);

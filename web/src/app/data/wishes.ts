@@ -28,15 +28,15 @@ export interface WishExperience {
 export const experiences: Record<WishKey, WishExperience> = {
   gatoya: {
     key: 'gatoya',
-    name: 'Gatoya',
-    kicker: 'For the girl who turns rooms into sunlight',
-    headline: 'Happy Birthday, Gatoya',
-    greeting: 'Isabukuru nziza, our shining girl',
+    name: 'Brigitte',
+    kicker: 'Gatoya — first of the twins — Brigitte a.k.a. Bijoux',
+    headline: 'Happy Birthday, Bijoux',
+    greeting: 'Isabukuru nziza, Brigitte · Gatoya',
     letter: [
+      'In Rwanda, Gatoya names the twin who arrived first. That name is yours — and so is Brigitte, and so is Bijoux, the sparkle people reach for when they talk about you.',
       'There is a particular kind of joy that only you carry — the kind that arrives before you even speak, in the tilt of your smile and the way you make ordinary evenings feel like a celebration.',
       'From the little one in school blues to the woman in pink satin who lights up every frame, you have grown into someone brave, stylish, and impossibly dear.',
-      'May this year spoil you with laughter that lasts too long, doors that open kindly, and a heart that never forgets how loved you are at home.',
-      'Blow the candle. Make the wish. We are already cheering.'
+      'May this year spoil you with laughter that lasts too long, doors that open kindly, and a heart that never forgets how loved you are at home. Blow the candle. Make the wish. We are already cheering.'
     ],
     closing: 'With all our love, from home.',
     palette: 'rose',
@@ -64,15 +64,15 @@ export const experiences: Record<WishKey, WishExperience> = {
   },
   gakuru: {
     key: 'gakuru',
-    name: 'Gakuru',
-    kicker: 'For the one who frames the world — and fills it',
-    headline: 'Happy Birthday, Gakuru',
-    greeting: 'Isabukuru nziza, our steady star',
+    name: 'Evergiste',
+    kicker: 'Gakuru — second of the twins — Evergiste a.k.a. Ever',
+    headline: 'Happy Birthday, Ever',
+    greeting: 'Isabukuru nziza, Evergiste · Gakuru',
     letter: [
+      'Gakuru is the twin name for the one who follows — second into the world, never second in our hearts. You are Evergiste. You are Ever. You are Gakuru.',
       'You have a way of standing in a room as if you already know the next beautiful thing that will happen. Camera in hand or cake in hand, you show up fully.',
       'May this year give you frames worth keeping: work that proud, friends who stay, and a path as sharp as your style in that three-piece suit.',
-      'You are the twin with the calm smile and the bright plan. Keep capturing life — and let life capture you back, generously.',
-      'This page is a standing ovation that does not need a lens. We see you.'
+      'Keep capturing life — and let life capture you back, generously. This page is a standing ovation that does not need a lens. We see you.'
     ],
     closing: 'With pride and a mountain of love, from home.',
     palette: 'gold',
@@ -95,15 +95,15 @@ export const experiences: Record<WishKey, WishExperience> = {
   },
   both: {
     key: 'both',
-    name: 'Gatoya & Gakuru',
-    kicker: 'Two heartbeats. One birthday. Double the fireworks.',
+    name: 'Brigitte & Evergiste',
+    kicker: '18 October · Gatoya first, Gakuru second · amapasa',
     headline: 'Happy Birthday, Twins',
-    greeting: 'Isabukuru nziza, amapasa — twice the joy',
+    greeting: 'Isabukuru nziza, Bijoux & Ever',
     letter: [
-      'Once upon a home, two stars arrived on the same sky. Different light, same constellation. Gatoya with the laugh that rearranges the furniture. Gakuru with the gaze that finds the good angle.',
-      'You have grown side by side — schoolyards, living rooms, ballrooms, cakes with too much icing and exactly enough love. The world got lucky twice.',
-      'May this shared year be generous: health that stays, dreams that land, and a bond that keeps winning every ordinary Tuesday.',
-      'This gift is a house of memories with the lights left on for both of you. Walk in. Stay as long as you want. You are the party.'
+      'Once upon a home, two stars arrived on the same sky. In Rwanda we call the first Gatoya and the second Gakuru — so the world would always know who came first and who came next. Gatoya is Brigitte, a.k.a. Bijoux. Gakuru is Evergiste, a.k.a. Ever.',
+      'Different light, same constellation. Bijoux with the laugh that rearranges the furniture. Ever with the gaze that finds the good angle.',
+      'You have grown side by side — schoolyards, living rooms, ballrooms, cakes with too much icing and exactly enough love. The world got lucky twice, on the eighteenth of October.',
+      'May this shared year be generous: health that stays, dreams that land, and a bond that keeps winning every ordinary Tuesday. This gift is a house of memories with the lights left on for both of you.'
     ],
     closing: 'Forever your people, forever your home.',
     palette: 'twin',
@@ -154,22 +154,22 @@ export const experiences: Record<WishKey, WishExperience> = {
 export const chooser = [
   {
     key: 'gatoya' as WishKey,
-    title: 'Gatoya',
-    subtitle: 'Rose-gold wishes',
+    title: 'Bijoux',
+    subtitle: 'Gatoya · first-born · Brigitte',
     line: 'Open the letter written just for her.',
     image: '/media/Gatoya/Snapchat-390143016.jpg'
   },
   {
     key: 'both' as WishKey,
     title: 'Both',
-    subtitle: 'Double celebration',
+    subtitle: 'Amapasa · 18 October',
     line: 'Because some birthdays come in pairs.',
     image: '/media/Gakuru/IMG-20241017-WA0001.jpg'
   },
   {
     key: 'gakuru' as WishKey,
-    title: 'Gakuru',
-    subtitle: 'Gold-hour wishes',
+    title: 'Ever',
+    subtitle: 'Gakuru · second-born · Evergiste',
     line: 'Open the letter written just for him.',
     image: '/media/Gakuru/IMG-20241017-WA0013.jpg'
   }

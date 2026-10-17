@@ -1,20 +1,50 @@
 <section class="stage">
-  @if (!opened()) {
+  @if (!birthday.unlocked()) {
+    <div class="countdown-card">
+      <p class="eyebrow">18 October · Africa/Kigali</p>
+      <h1>The gift opens<br />on their birthday</h1>
+      <p class="hint">
+        
+        Evergiste (Ever)   — Gakuru.<br />
+        Brigitte  (Bijoux)  — Gatoya.<br />
+        Twin names, one date. Wishes wait until midnight.
+      </p>
+      <div class="clock" aria-live="polite">
+        <div>
+          <strong>{{ birthday.remaining().days }}</strong>
+          <span>Days</span>
+        </div>
+        <div>
+          <strong>{{ birthday.remaining().hours }}</strong>
+          <span>Hours</span>
+        </div>
+        <div>
+          <strong>{{ birthday.remaining().minutes }}</strong>
+          <span>Minutes</span>
+        </div>
+        <div>
+          <strong>{{ birthday.remaining().seconds }}</strong>
+          <span>Seconds</span>
+        </div>
+      </div>
+    </div>
+  } @else if (!opened()) {
     <button class="gift" type="button" (click)="openGift()">
       <span class="ribbon"></span>
       <span class="bow"></span>
       <div class="gift-copy">
-        <p class="eyebrow">A present from home</p>
+        <p class="eyebrow">A present from home · 18 October</p>
         <h1>Tap to open<br />the birthday gift</h1>
         <p class="hint">Music, photographs, and two letters waiting inside.</p>
       </div>
     </button>
   } @else {
     <header class="intro">
-      <p class="eyebrow">Gatoya & Gakuru</p>
+      <p class="eyebrow">Amapasa · Twins</p>
       <h1>Whose wishes shall we open?</h1>
       <p class="lede">
-        One birthday. Two stars. Choose her glow, his gold, or the whole constellation.
+        Gatoya is first-born Brigitte, a.k.a. Bijoux. Gakuru is second-born Evergiste, a.k.a. Ever.
+        Choose her glow, his gold, or the whole constellation.
       </p>
     </header>
 

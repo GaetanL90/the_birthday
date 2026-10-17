@@ -7,5 +7,8 @@
 <main>
   <router-outlet />
 </main>
-<app-install-banner />
-<app-music-player />
+<app-site-credit />
+@if (birthday.unlocked()) {
+  <app-install-banner />
+  <app-music-player />
+}
