@@ -110,6 +110,7 @@ export const experiences: Record<WishKey, WishExperience> = {
     hero: '/media/Gakuru/IMG-20241017-WA0001.jpg',
     photos: [
       { src: '/media/Gakuru/IMG-20241017-WA0001.jpg', caption: 'The original duo. Still unbeatable.', alt: 'Gatoya and Gakuru dressed up' },
+      { src: '/media/Gatoya/IMG-20241017-WA0001.jpg', caption: 'Same night, her frame of the story.', alt: 'Gatoya at the celebration' },
       { src: '/media/Gakuru/IMG_108.jpg', caption: 'When the night asked for elegance, you both answered.', alt: 'Twins at a celebration' },
       { src: '/media/Gakuru/IMG-20251019-WA0010.jpg', caption: 'One cake. Two wishes. Infinite frosting.', alt: 'Twins cutting cake' },
       { src: '/media/Gakuru/IMG-20251019-WA0020.jpg', caption: 'Family hands stacked on a blessing.', alt: 'Family cake cutting' },
@@ -119,12 +120,33 @@ export const experiences: Record<WishKey, WishExperience> = {
       { src: '/media/Gakuru/IMG-20251019-WA0029.jpg', caption: 'His slice of the sky.', alt: 'Gakuru with mum and cake' },
       { src: '/media/Gakuru/IMG-20241017-WA0013.jpg', caption: 'He keeps the memories in focus.', alt: 'Gakuru photographer' },
       { src: '/media/Gatoya/Snapchat-390143016.jpg', caption: 'She keeps the memories in colour.', alt: 'Gatoya portrait' },
+      { src: '/media/Gakuru/Snapchat-171097016.jpg', caption: 'That smile could light a whole street.', alt: 'Gakuru smiling' },
+      { src: '/media/Gatoya/Snapchat-2020056819.jpg', caption: 'Ciao, queen of the clock.', alt: 'Gatoya selfie' },
+      { src: '/media/Gatoya/Snapchat-1803664950.jpg', caption: 'A glance that starts the party.', alt: 'Gatoya snap' },
+      { src: '/media/Gatoya/IMG-20260328-WA0078.jpg', caption: 'Rwanda on her back, sunshine on her face.', alt: 'Gatoya in Rwanda jersey' },
+      { src: '/media/Gatoya/IMG-20260328-WA0011.jpg', caption: 'Another plot twist in her highlight reel.', alt: 'Gatoya outdoors' },
       { src: '/media/Gatoya/g.a.e.t.a.n_20211227_p_2737848748787251136_1_2737848744760586406.jpg', caption: 'Chapter: becoming.', alt: 'Gatoya younger' },
-      { src: '/media/Gakuru/g.a.e.t.a.n_20211227_p_2737848748787251136_2_2737848744752337535.jpg', caption: 'Chapter: becoming, take two.', alt: 'Gakuru younger' }
+      { src: '/media/Gakuru/g.a.e.t.a.n_20211227_p_2737848748787251136_2_2737848744752337535.jpg', caption: 'Chapter: becoming, take two.', alt: 'Gakuru younger' },
+      { src: '/media/Gatoya/IMG_20230813_195555_136.jpg', caption: 'Home couch, remote in hand, joy on tap.', alt: 'Gatoya relaxing at home' },
+      { src: '/media/Gatoya/IMG_20231119_152152_915~2.jpg', caption: 'Collected moments, still glowing.', alt: 'Gatoya memory' },
+      { src: '/media/Gatoya/IMG_20231018_140000_807.jpg', caption: 'A quiet frame, still full of her.', alt: 'Gatoya candid' },
+      { src: '/media/Gakuru/IMG_20231008_151643_710.jpg', caption: 'A still from the movie of your life.', alt: 'Gakuru portrait' },
+      { src: '/media/Gakuru/IMG_20231018_140153_530.jpg', caption: 'Golden hour looks good on you.', alt: 'Gakuru daytime' },
+      { src: '/media/Gakuru/IMG_20231018_135948_724.jpg', caption: 'Another still from a good day.', alt: 'Gakuru extra portrait' },
+      { src: '/media/Gakuru/IMG_20231018_135924_926.jpg', caption: 'A frame that almost got away.', alt: 'Gakuru outdoor still' },
+      { src: '/media/Gakuru/IMG_20231018_135902_907~2.jpg', caption: 'Side by side in the sun.', alt: 'Gakuru companion frame' },
+      { src: '/media/Gakuru/FileNameLost(1646).jpg', caption: 'Some files lose names. This face never does.', alt: 'Gakuru photo' },
+      { src: '/media/Gakuru/Screenshot_20240609-193608.jpg', caption: 'A saved screenshot of a feeling.', alt: 'Gakuru snapshot' },
+      { src: '/media/Gatoya/Screenshot_20240706-192030.jpg', caption: 'Proof that happiness photographs well.', alt: 'Gatoya screenshot portrait' },
+      { src: '/media/Gatoya/Screenshot_20240706-191941~2.jpg', caption: 'Saved because it mattered.', alt: 'Gatoya extra snapshot' },
+      { src: '/media/Gatoya/IMG_20211120_205830_229.jpg', caption: 'Then, now, always Gatoya.', alt: 'Younger Gatoya' },
+      { src: '/media/Gatoya/IMG_20211120_205830_229~2.jpg', caption: 'Same smile, another keep.', alt: 'Younger Gatoya extra' }
     ],
     videos: [
       { src: '/media/Gatoya/VID-20240203-WA0008.mp4', caption: 'A moving page from the family album.' },
-      { src: '/media/Gatoya/Snapchat-199322191.mp4', caption: 'Press play. Smile back.' }
+      { src: '/media/Gatoya/Snapchat-199322191.mp4', caption: 'Press play. Smile back.' },
+      { src: '/media/Gatoya/Snapchat-940151793.mp4', caption: 'A clip from her highlight reel.' },
+      { src: '/media/Gatoya/VID_119921111_131559_159.mp4', caption: 'And one more for the twins.' }
     ]
   }
 };
