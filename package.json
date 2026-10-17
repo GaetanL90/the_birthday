@@ -6,6 +6,6 @@
     "build": "npm run build --prefix web"
   },
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   }
 }
